@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
   }
 
-  function createBoxes(amount)
-   {
-    console.log('createBoxes called')
+  function createBoxes(amount) {
     let size = 30;
 
     for (let i = 0; i < amount; i++) {
@@ -27,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   controls.addEventListener('click', (event) => {
     if (event.target.dataset.create) {
-      const amount = +controls.querySelector('input').value;
+      const amount = +document.querySelector('input').value;
       createBoxes(amount);
     }
 
