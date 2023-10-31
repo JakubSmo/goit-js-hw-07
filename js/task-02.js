@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const ingredientsList = document.getElementById('ingredients');
+document.addEventListener("DOMContentLoaded", () => {
+  const ingredientsList = document.getElementById("ingredients");
   const ingredients = [
     "Potatoes",
     "Mushrooms",
@@ -9,11 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     "Condiments",
   ];
 
-  
   ingredients.forEach((ingredient) => {
-    const li = document.createElement('li'); 
-    li.textContent = ingredient; 
-    li.classList.add('item'); 
+    const li = document.createElement("li");
+    li.textContent = ingredient;
+    li.classList.add("item");
 
     ingredientsList.appendChild(li);
   });
